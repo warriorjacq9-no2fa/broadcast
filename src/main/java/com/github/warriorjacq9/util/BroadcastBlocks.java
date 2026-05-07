@@ -1,9 +1,11 @@
 package com.github.warriorjacq9.util;
 
 import com.github.warriorjacq9.Broadcast;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -25,5 +27,9 @@ public class BroadcastBlocks {
         return block;
     }
 
-    public static void init(){}
+    public static void init() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(
+                (itemGroup) -> itemGroup.add(TRANSMITTER.asItem())
+        );
+    }
 }
