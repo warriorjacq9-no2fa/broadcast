@@ -1,6 +1,6 @@
-package com.github.warriorjacq9.util;
+package com.github.warriorjacq9.broadcast.util;
 
-import com.github.warriorjacq9.Broadcast;
+import com.github.warriorjacq9.broadcast.Broadcast;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

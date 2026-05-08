@@ -1,6 +1,6 @@
-package com.github.warriorjacq9;
+package com.github.warriorjacq9.broadcast;
 
-import com.github.warriorjacq9.util.BroadcastBlocks;
+import com.github.warriorjacq9.broadcast.util.BroadcastBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.block.AbstractBlock;
